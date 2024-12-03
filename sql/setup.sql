@@ -7,9 +7,7 @@ CREATE TABLE IF NOT EXISTS dwh.people (
 
 CREATE TABLE IF NOT EXISTS dwh.returns (
     order_id TEXT,
-    returned BOOLEAN,
-
-    PRIMARY KEY(order_id)
+    returned BOOLEAN
 );
 
 CREATE TABLE IF NOT EXISTS dwh.orders (
@@ -18,21 +16,19 @@ CREATE TABLE IF NOT EXISTS dwh.orders (
     country_name TEXT,
     customer_id TEXT,
     customer_name TEXT,
-    discount NUMERIC,
-    order_date DATE,
-    order_id TEXT REFERENCES dwh.returns(order_id),
+    discount FLOAT,
+    order_date TEXT,
+    order_id TEXT,
     postal_code TEXT,
     product_id TEXT,
     product_name TEXT,
-    profit NUMERIC,
+    profit FLOAT,
     quantity INTEGER,
     region_name TEXT,
-    sales NUMERIC,
+    sales FLOAT,
     segment TEXT,
-    ship_date DATE,
+    ship_date TEXT,
     ship_mode TEXT,
     state_name TEXT,
     sub_category TEXT
-
-    PRIMARY KEY(order_id)
 );
