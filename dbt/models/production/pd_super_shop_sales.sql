@@ -52,3 +52,9 @@ SELECT
 FROM {{ ref('stg_orders') }} AS o
 LEFT JOIN manager m ON o.region_name = m.region_name
 LEFT JOIN returns r ON o.order_id = r.order_id
+
+{% if is_incremental() %}
+
+where order_date >= (select coalesce(max(order_date),'1900-01-01') from {{ this }} )
+
+{% endif %}

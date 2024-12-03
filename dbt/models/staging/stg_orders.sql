@@ -1,7 +1,8 @@
 {{
     config(
         materialized='incremental',
-        schema='stg'
+        schema='stg',
+        unique_key='order_id'
     )
 }}
 
