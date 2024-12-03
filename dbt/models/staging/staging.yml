@@ -1,0 +1,10 @@
+version: 2
+
+sources:
+  - name: dwh
+    database: sales
+    schema: dwh
+    tables:
+      - name: orders
+      - name: people
+      - name: returns

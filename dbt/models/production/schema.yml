@@ -1,0 +1,84 @@
+version: 2
+
+models:
+  - name: pd_super_shop_sales
+    description: This table is for super shop clients to monitor sales in different regions.
+    columns:
+      - name: order_date
+        data_type: DATE
+        description: The date which customer ordered.
+      - name: ship_date
+        data_type: DATE
+        description: The date which order got shipped.
+      - name: order_id
+        data_type: STRING
+        description: The unique ID for each order made.
+      - name: customer_id
+        data_type: STRING
+        description: The unique ID for each customer.
+      - name: customer_name
+        data_type: STRING
+        description: The full name of the customer.
+      - name: buyer_segment
+        data_type: STRING
+        description: The segmentation of the customers. Home Office, Corporate and Consumer.    
+      - name: country
+        data_type: STRING
+        description: The country where the customer located.
+      - name: region
+        data_type: STRING
+        description: The region where the customer located.
+      - name: state
+        data_type: STRING
+        description: The state where the customer located.
+      - name: postal_code
+        data_type: STRING
+        description: The postal code where the customer located.
+      - name: city
+        data_type: STRING
+        description: The city where the customer located.
+      - name: product_category
+        data_type: STRING
+        description: The category of product belongs to. Furniture,	Office Supplies and Technology
+      - name: product_sub_category
+        data_type: STRING
+        description: A lower detail of the product category.
+      - name: product_id
+        data_type: STRING
+        description: The unique ID of the product.
+      - name: product_name
+        data_type: STRING
+        description: The specific name of the product.
+      - name: ship_mode
+        data_type: STRING
+        description: The method the customer chose for shipping order. 
+      - name: gross_sales
+        data_type: FLOAT
+        description: The sales amount before any discount is applied.
+      - name: discount_percent
+        data_type: FLOAT
+        description: The discount applied when order happened.
+      - name: net_sales
+        data_type: FLOAT
+        description: The sales amount after any discount is applied.
+      - name: quantity
+        data_type: INTEGER
+        description: The amount of the order.
+      - name: cost
+        data_type: FLOAT
+        description: Expenses incurred from sales and operations in a specific period. 
+                     Formula = net_sales - profit
+      - name: profit
+        data_type: FLOAT
+        description: Profit earned from sales in a specific period.
+      - name: is_high_value_sales
+        data_type: Boolean
+        description: The net sales amount exceeds $2,000 and not being returned by customer.
+                     Formula = net_sales >= 2000 and is_returned = FALSE
+      - name: manager
+        data_type: String
+        description: The regional manager
+      - name: is_returned
+        data_type: Boolean
+        description: If the order was returned by customer.
+        
