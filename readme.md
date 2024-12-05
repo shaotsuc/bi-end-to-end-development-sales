@@ -2,7 +2,7 @@
 
 ## Table of Content
 + [Description](#Description)
-+ [Task](#task-business-questions-asked)
++ [Task (Business Questions Asked)](#task-business-questions-asked)
 + [Tech Stack](#tech-stack)
 + [Deliverables](#deliverables)
     + [Data Models](./dbt/models/)
@@ -60,12 +60,31 @@ COUNT(DISTINCT customer_id) AS hv_customer_cnt
 FROM dbt_prod.pd_super_shop_sales
 WHERE is_high_value_sales
 ```
+| hv_customer_cnt |
+| ---------------: |
+| 97              |
+
 
 <br>
 
-
 <code> **Can you look into the data on returns and see whether you can find any valuable information on these returns, e.g., in the context of product category, time?** </code>
 
+```sql
+SELECT
+product_category,
+COUNT(DISTINCT order_id) AS return_cnt
+FROM dbt_prod.pd_super_shop_sales
+WHERE is_returned
+GROUP BY
+      product_category
+ORDER BY
+	return_cnt DESC
+```
+| product_category | return_cnt |
+| ---------------- | ----------: |
+| Office Supplies  | 234        |
+| Furniture        | 136        |
+| Technology       | 123        |
 
 <br>
 
