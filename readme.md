@@ -7,7 +7,7 @@
 + [Deliverables](#deliverables)
     + [Data Models](./dbt/models/)
     + [Business Question Answered](#business-question-answered)
-    + [Data Visualization](#data-visualization)
+    + [PowerBI Data Visualization](#data-visualization)
 
 <br>
 
@@ -43,8 +43,11 @@ There is an e-commerce company that sells different product to customer within t
 
 ### Business Question Answered
 
-<code> **Can you tell us how many customers there are which have placed at least one order in which their total sales amount exceeded 2,000$?** </code>
+<code> **Can you tell us how many customers there are which have placed at least one order in which their total sales amount exceeded $2,000?** </code>
 
+```sql
+
+```
 
 <br>
 
@@ -55,10 +58,10 @@ There is an e-commerce company that sells different product to customer within t
 <br>
 
 ### Data Visualization
-#### 🖼️ Dashboard Snapshot
+#### 🖼️ Dashboard Snapshot in Power BI
 ![Dashboard Snapshot](./media/dashboard.png)
 
 <br>
 
-#### 📺 Quick Dashboard Demo
+#### 📺 Quick PowerBI Dashboard Demo
 [![Quick Dashboard Demo](https://img.youtube.com/vi/2MCzeJqLZJE/0.jpg)](https://www.youtube.com/watch?v=2MCzeJqLZJE)
