@@ -55,10 +55,10 @@ There is an e-commerce company that sells different product to customer within t
 <br>
 
 ### Data Visualization
-🖼️ Dashboard Snapshot
+#### 🖼️ Dashboard Snapshot
 ![Dashboard Snapshot](./media/dashboard.png)
 
 <br>
 
-📺 Quick Dashboard Demo
+#### 📺 Quick Dashboard Demo
 [![Quick Dashboard Demo](https://img.youtube.com/vi/2MCzeJqLZJE/0.jpg)](https://www.youtube.com/watch?v=2MCzeJqLZJE)
