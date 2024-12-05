@@ -52,4 +52,13 @@ There is an e-commerce company that sells different product to customer within t
 <code> **Can you look into the data on returns and see whether you can find any valuable information on these returns, e.g., in the context of product category, time?** </code>
 
 
+<br>
+
 ### Data Visualization
+🖼️ Dashboard Snapshot
+![Dashboard Snapshot](./media/dashboard.png)
+
+<br>
+
+📺 Quick Dashboard Demo
+[![Quick Dashboard Demo](https://img.youtube.com/vi/2MCzeJqLZJE/0.jpg)](https://www.youtube.com/watch?v=2MCzeJqLZJE)
