@@ -46,7 +46,19 @@ There is an e-commerce company that sells different product to customer within t
 <code> **Can you tell us how many customers there are which have placed at least one order in which their total sales amount exceeded $2,000?** </code>
 
 ```sql
+SELECT
+COUNT(DISTINCT customer_id) AS hv_customer_cnt
+FROM dbt_prod.pd_super_shop_sales
+WHERE quantity >= 1
+AND net_sales >= 2000
+AND is_returned = FALSE
 
+-- OR
+
+SELECT
+COUNT(DISTINCT customer_id) AS hv_customer_cnt
+FROM dbt_prod.pd_super_shop_sales
+WHERE is_high_value_sales
 ```
 
 <br>
