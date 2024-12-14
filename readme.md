@@ -29,9 +29,12 @@ There is an e-commerce company that sells different product to customer within t
 
 ## Tech Stack
 ![Docker](./media/docker-icon.png)
-![PostgresSQl](./media/postgresql-icon.png)
 ![dbt](./media/dbt-icon.png)
+![PostgresSQl](./media/postgresql-icon.png)
+![BigQuery](./media/bigquery-icon.png)
 ![PowerBI](./media/powerbi-icon.png)
+
+*PostregreSQL is for development. PowerBI dashboard connected via BigQuery.*
 
 <br>
 
